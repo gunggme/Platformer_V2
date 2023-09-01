@@ -72,10 +72,18 @@ public class PlayerMove : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext value)
     {
-        if (animator.GetBool(AnimationString.isGroundBool))
+        if (animator.GetBool(AnimationString.isGroundBool) && value.started)
         {
             rigid.velocity = new Vector2(rigid.velocity.x, jumpImpulse);
             animator.SetTrigger(AnimationString.jumpTrigger);
+        }
+    }
+
+    public void OnAttack(InputAction.CallbackContext value)
+    {
+        if (value.started)
+        {
+            animator.SetTrigger(AnimationString.attackTrigger);
         }
     }
     
