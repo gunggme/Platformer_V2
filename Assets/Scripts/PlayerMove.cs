@@ -5,7 +5,22 @@ using UnityEngine.InputSystem;
 public class PlayerMove : MonoBehaviour
 {
     public float speed;
-    private float moveSpeed;
+
+    public float moveSpeed
+    {
+        get
+        {
+            if (isWall || !animator.GetBool(AnimationString.canMove))
+            {
+                return 0;
+            }
+            else
+            {
+                return speed;
+            }
+        }   
+    }
+
     public float jumpImpulse;
 
     private bool isWall;
@@ -58,7 +73,6 @@ public class PlayerMove : MonoBehaviour
     private void FixedUpdate()
     {
         isWall = rigid.Raycast(moveDirection, new Vector2(1, 2), 0.2f);
-        moveSpeed = isWall ? 0f : speed;
         rigid.velocity = new Vector2(moveDirection.x * moveSpeed, rigid.velocity.y);
     }
 
