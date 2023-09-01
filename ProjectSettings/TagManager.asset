@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2027764201
+    locked: 0
+  - name: Tilemap
+    uniqueID: 1474500655
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
