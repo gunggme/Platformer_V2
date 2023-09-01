@@ -20,6 +20,8 @@ public class PlayerMove : MonoBehaviour
             }
         }   
     }
+    //대쉬힘
+    public Vector2 dashForce;
 
     public float jumpImpulse;
 

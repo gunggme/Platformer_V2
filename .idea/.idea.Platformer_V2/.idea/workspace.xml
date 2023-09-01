@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0a0d1d9d-543a-491e-8df0-827bb2467d87" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Platformer_V2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Platformer_V2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/adventurer-idle-00.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/adventurer-idle-00.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimationString.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimationString.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stage1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Stage1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMove.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1693554664997</updated>
       <workItem from="1693554672455" duration="5000" />
-      <workItem from="1693558009654" duration="6733000" />
+      <workItem from="1693558009654" duration="7590000" />
     </task>
     <task id="LOCAL-00001" summary="Feat : 플레이어 애니메이션 이식 완료">
       <option name="closed" value="true" />
@@ -140,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693564453540</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Feat : 공격할때 움직임 제어">
+      <option name="closed" value="true" />
+      <created>1693564897146</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693564897146</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +164,7 @@
     <MESSAGE value="Feat : 공격 판정 완성" />
     <MESSAGE value="Feat : 공용 데미지 스크립트 생성" />
     <MESSAGE value="Test : 공격으로 인한 넉백 테스트 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test : 공격으로 인한 넉백 테스트 완료" />
+    <MESSAGE value="Feat : 공격할때 움직임 제어" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat : 공격할때 움직임 제어" />
   </component>
 </project>
