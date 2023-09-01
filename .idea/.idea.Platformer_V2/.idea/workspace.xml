@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a0d1d9d-543a-491e-8df0-827bb2467d87" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Platformer_V2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Platformer_V2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stage1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Stage1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Extensions.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/gunggme/Desktop/makeGame/Platformer_V2/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Damageable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -94,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1693554664997</updated>
       <workItem from="1693554672455" duration="5000" />
-      <workItem from="1693558009654" duration="5423000" />
+      <workItem from="1693558009654" duration="9677000" />
     </task>
     <task id="LOCAL-00001" summary="Feat : 플레이어 애니메이션 이식 완료">
       <option name="closed" value="true" />
@@ -120,7 +124,47 @@
       <option name="project" value="LOCAL" />
       <updated>1693563247250</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Feat : 공용 데미지 스크립트 생성">
+      <option name="closed" value="true" />
+      <created>1693563783782</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693563783782</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Test : 공격으로 인한 넉백 테스트 완료">
+      <option name="closed" value="true" />
+      <created>1693564453540</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693564453540</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Feat : 공격할때 움직임 제어">
+      <option name="closed" value="true" />
+      <created>1693564897146</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693564897146</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Rename : 플레이어 오브젝트 프리팹화">
+      <option name="closed" value="true" />
+      <created>1693565772734</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693565772734</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Rename : 이하 같음">
+      <option name="closed" value="true" />
+      <created>1693566604909</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693566604909</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +178,11 @@
     <MESSAGE value="Feat : 플레이어 애니메이션 이식 완료" />
     <MESSAGE value="Feat : 공격 모션, 제어 추가 완료" />
     <MESSAGE value="Feat : 공격 판정 완성" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat : 공격 판정 완성" />
+    <MESSAGE value="Feat : 공용 데미지 스크립트 생성" />
+    <MESSAGE value="Test : 공격으로 인한 넉백 테스트 완료" />
+    <MESSAGE value="Feat : 공격할때 움직임 제어" />
+    <MESSAGE value="Rename : 플레이어 오브젝트 프리팹화" />
+    <MESSAGE value="Rename : 이하 같음" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename : 이하 같음" />
   </component>
 </project>
