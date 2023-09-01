@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a0d1d9d-543a-491e-8df0-827bb2467d87" name="Changes" comment="">
+    <list default="true" id="0a0d1d9d-543a-491e-8df0-827bb2467d87" name="Changes" comment="Feat : 플레이어 피격 완성">
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Goblin.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Platformer_V2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Platformer_V2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stage1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Stage1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Extensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/adventurer-idle-00.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/adventurer-idle-00.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,7 @@
     <setting file="mock://C:/Users/gunggme/Desktop/makeGame/Platformer_V2/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Damageable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../새 폴더/flatformer/Flatform/Assets/Scripts/Enemy/Goblin.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -98,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1693554664997</updated>
       <workItem from="1693554672455" duration="5000" />
-      <workItem from="1693558009654" duration="9677000" />
+      <workItem from="1693558009654" duration="11812000" />
     </task>
     <task id="LOCAL-00001" summary="Feat : 플레이어 애니메이션 이식 완료">
       <option name="closed" value="true" />
@@ -164,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693566604909</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Feat : 플레이어 피격 완성">
+      <option name="closed" value="true" />
+      <created>1693568217113</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1693568217113</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +192,7 @@
     <MESSAGE value="Feat : 공격할때 움직임 제어" />
     <MESSAGE value="Rename : 플레이어 오브젝트 프리팹화" />
     <MESSAGE value="Rename : 이하 같음" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename : 이하 같음" />
+    <MESSAGE value="Feat : 플레이어 피격 완성" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat : 플레이어 피격 완성" />
   </component>
 </project>
