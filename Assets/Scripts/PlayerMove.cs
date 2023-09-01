@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,11 +11,48 @@ public class PlayerMove : MonoBehaviour
     private bool isWall;
     
     private Vector2 moveDirection;
+    
+    public bool _isFacingRight = true;
+
+    public bool IsFacingRight
+    {
+        get
+        {
+            return _isFacingRight;
+        }
+        set
+        {
+            if (_isFacingRight != value)
+            {
+                // Flip the local scale to make the player face the opposite direction
+                transform.localScale *= new Vector2(-1, 1); 
+            }
+            
+            _isFacingRight = value;
+        }
+    }
+
+    // Component
+    private Animator animator;
     private Rigidbody2D rigid;
 
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+    }
+
+    private void Update()
+    { 
+        animator.SetBool(AnimationString.moveBool, moveDirection != Vector2.zero);
+        if (rigid.Raycast(Vector2.down, Vector2.one, 0.9f))
+        {
+            animator.SetBool(AnimationString.isGroundBool, true);
+        }
+        else
+        {
+            animator.SetBool(AnimationString.isGroundBool, false);
+        }
     }
 
     private void FixedUpdate()
@@ -24,15 +62,35 @@ public class PlayerMove : MonoBehaviour
         rigid.velocity = new Vector2(moveDirection.x * moveSpeed, rigid.velocity.y);
     }
 
-    public void OnMove(InputValue value)
+    public void OnMove(InputAction.CallbackContext value)
     {
-        Vector2 inputVec = value.Get<Vector2>();
+        Debug.Log("move");
+        Vector2 inputVec = value.ReadValue<Vector2>();
+        SetFacingDirection(inputVec);
         moveDirection = inputVec;
     }
 
-    public void OnJump(InputValue value)
+    public void OnJump(InputAction.CallbackContext value)
     {
-        if (rigid.Raycast(Vector2.down, Vector2.one, 0.9f))
+        if (animator.GetBool(AnimationString.isGroundBool))
+        {
             rigid.velocity = new Vector2(rigid.velocity.x, jumpImpulse);
+            animator.SetTrigger(AnimationString.jumpTrigger);
+        }
+    }
+    
+    private void SetFacingDirection(Vector2 moveInput)
+    {
+
+        if (moveInput.x > 0 && !IsFacingRight)
+        {
+            // Face the right
+            IsFacingRight = true;
+        }
+        else if (moveInput.x < 0 && IsFacingRight )
+        {
+            // Face the left
+            IsFacingRight = false;
+        }
     }
 }

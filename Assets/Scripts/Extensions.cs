@@ -10,7 +10,7 @@ public static class Extensions
 
         RaycastHit2D hit = Physics2D.BoxCast(rigidbody.position, size,0f, direction, distance, layerMask);
         return hit.collider && hit.rigidbody != rigidbody;
-        }
+    }
 
     public static bool DotTest(this Transform transform, Transform other, Vector2 testDirection)
     {
